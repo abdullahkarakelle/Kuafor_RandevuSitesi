@@ -1,0 +1,244 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Navbar */
+.navbar {
+    background-color:  #050e16;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0px auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.sticky {
+    background-color: transparent;
+}
+
+
+
+.navbar-text {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex: 1;
+}
+
+.navbar-text li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-text a,
+.navbar-text button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+    color: darkgray;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 11px;
+}
+
+.navbar-text a:hover,
+.navbar-text button:hover {
+    background-color:  #050e16;
+    color: white;
+    box-shadow: 0 2px 10px rgba(58, 80, 107, 0.5);
+    transform: scale(1.05);
+}
+
+.navbar-right {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-bottom: 7px;
+    margin-right: 20px;
+}
+
+.navbar-right a {
+    color: darkgray;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 25px;
+}
+
+.navbar-right a:hover {
+    background-color: #050e16;
+    color: white;
+    box-shadow: 0 2px 10px rgba(58, 80, 107, 0.5);
+    transform: scale(1.05);
+}
+
+.menu-item {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:  #050e16;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transform: translateY(-10px);
+    z-index: 100;
+}
+
+.menu-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown a {
+    display: block;
+    padding: 12px 15px;
+    color: darkgray;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.2s ease-in-out;
+}
+
+.dropdown a:hover {
+    background-color: #050e16;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-text {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dropdown {
+        width: 100%;
+        position: relative;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #050e16;
+    color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 100px;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #bdc3c7;
+}
+
+.footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #3498db;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+}

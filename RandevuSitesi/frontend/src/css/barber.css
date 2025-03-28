@@ -1,0 +1,109 @@
+.barbers-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.barbers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.barbers-table th, .barbers-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.barbers-table th {
+    background-color: #f4f4f4;
+}
+
+.barbers-table tbody tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.barber-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+}
+
+.barber-card h3 {
+    margin-bottom: 15px;
+}
+
+.barber-card button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.barber-card button:hover {
+    background: #cc0000;
+}
+
+.barber-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.barber-card li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.barber-card li span {
+    font-weight: bold;
+}
+
+.barber-card button.close-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.barbers-table .reserve-btn {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.barbers-table .reserve-btn:hover {
+    background: #45a049;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.filter-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.filter-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
