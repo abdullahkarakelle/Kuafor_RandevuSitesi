@@ -1,0 +1,174 @@
+.randevu-page-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 50px;
+}
+
+.form-container {
+    width: 40%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    text-align: center;
+    font-size: 24px;  /* Reduced font size */
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-size: 16px;  /* Reduced font size */
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+    padding: 12px;  /* Reduced padding */
+    margin-bottom: 16px;  /* Reduced margin */
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 16px;  /* Reduced font size */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container button:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.form-container button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Hizmetler seçildiğinde stil */
+.selected-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  /* Reduced gap */
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 10px;
+    max-height: 160px;
+    overflow-y: auto;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selected-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 14px;  /* Reduced padding */
+    font-size: 14px;  /* Reduced font size */
+    font-weight: 500;
+    max-width: 170px;  /* Reduced max-width */
+    box-sizing: border-box;
+}
+
+.selected-service button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;  /* Reduced font size */
+    margin-left: 10px;  /* Reduced margin */
+    transition: color 0.3s ease;
+}
+
+.selected-service button:hover {
+    color: #e74c3c;
+}
+
+.calendar-container {
+    width: 50%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.fc-header-toolbar {
+    padding: 8px;  /* Reduced padding */
+    color: black;
+    border-radius: 12px;
+    font-size: 16px;  /* Reduced font size */
+}
+
+.fc-daygrid-day-number {
+    font-size: 16px;  /* Reduced font size */
+    color: #2980b9;
+}
+
+.fc-event {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.fc-timegrid-slot {
+    background-color: #f0f0f0;
+}
+
+.fc-daygrid-day.fc-day-today {
+    background-color: #ecf6fd;
+    border-radius: 5px;
+}
+
+.fc-timegrid-slot.fc-timegrid-slot-available {
+    background-color: #145852;
+    border-radius: 5px;
+    color: white;
+}
+
+.fc-timegrid-slot.fc-timegrid-slot-booked {
+    background-color: #f39c12;
+    color: white;
+}
+
+.fc {
+    font-size: 12px;  /* Reduced font size */
+}
+
+.fc-timegrid-slot {
+    height: 45px;  /* Reduced height */
+    font-size: 14px;  /* Reduced font size */
+}
+
+.fc-timegrid-event {
+    font-size: 14px;  /* Reduced font size */
+    font-weight: bold;
+}
+
+.fc-daygrid-day-number {
+    font-size: 14px;  /* Reduced font size */
+    font-weight: bold;
+}
+
+.fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
+    color: #3498db;
+}

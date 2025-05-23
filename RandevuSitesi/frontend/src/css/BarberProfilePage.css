@@ -1,0 +1,74 @@
+.profile-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.barber-info {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.barber-details {
+    text-align: left;
+}
+
+.service-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.service-table th, .service-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.service-table th {
+    background-color: #f4f4f4;
+}
+
+.service-table td input {
+    width: 80px;
+    padding: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.update-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.add-service {
+    margin-top: 20px;
+}
+
+.add-service select, .add-service input {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.add-btn {
+    background-color: #008CBA;
+    color: white;
+}
